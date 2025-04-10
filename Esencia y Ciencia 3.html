@@ -1,0 +1,217 @@
+¡Perfecto! Ya que me compartiste la imagen definitiva (`portada.gpg.jpg`), a continuación te devuelvo **todo el código completo en un solo bloque**, listo para usar. Solo asegúrate de:
+
+1. **Guardar este código en un archivo llamado `index.html`**.
+2. **Guardar la imagen que me enviaste con el nombre exacto `portada.jpg`** (renómbrala quitando `.gpg` si es necesario).
+3. **Colocar ambos archivos en la misma carpeta**.
+
+---
+
+### 🌿 Código HTML + CSS + JS para tu web de “Esencia & Ciencia”:
+
+```html
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Esencia & Ciencia</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Georgia', serif;
+      background-color: #f5f5f0;
+      color: #1b3d1b;
+    }
+
+    header {
+      background-image: url('portada.jpg');
+      background-size: cover;
+      background-position: center;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      color: #fff;
+      padding: 20px;
+    }
+
+    header h1 {
+      font-size: 4em;
+      color: #e9f9e1;
+      text-shadow: 2px 2px 4px #000;
+    }
+
+    header h2 {
+      font-size: 2em;
+      font-weight: normal;
+      color: #f0fff0;
+    }
+
+    nav {
+      background-color: #1b3d1b;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    nav button {
+      background: none;
+      border: none;
+      color: #fff;
+      padding: 15px 20px;
+      font-size: 1em;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    nav button:hover {
+      background-color: #2e5932;
+    }
+
+    section {
+      padding: 40px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    .dark-section {
+      background-color: #e9f3e5;
+      border-left: 5px solid #1b3d1b;
+      margin-bottom: 30px;
+      padding: 20px;
+    }
+
+    form {
+      background-color: #f0fff0;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0px 2px 8px rgba(0,0,0,0.1);
+    }
+
+    form input, form select, form textarea {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+    }
+
+    form button {
+      background-color: #1b3d1b;
+      color: #fff;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      font-size: 1em;
+    }
+
+    form button:hover {
+      background-color: #2e5932;
+    }
+
+    footer {
+      background-color: #1b3d1b;
+      color: #fff;
+      text-align: center;
+      padding: 20px;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Esencia & Ciencia</h1>
+  <h2>Descubre el Poder Curativo de las Plantas Medicinales</h2>
+</header>
+
+<nav>
+  <button onclick="mostrar('quienes')">¿Quiénes somos?</button>
+  <button onclick="mostrar('productos')">Nuestros productos</button>
+  <button onclick="mostrar('cursos')">Nuestros cursos</button>
+  <button onclick="mostrar('servicios')">Nuestros servicios</button>
+  <button onclick="mostrar('tienda')">Tienda online</button>
+  <button onclick="mostrar('contacto')">Formulario y agenda</button>
+</nav>
+
+<section id="quienes" class="dark-section">
+  <h2>¿Quiénes Somos?</h2>
+  <p>Somos una empresa comprometida con la salud y el bienestar natural, impartiendo conocimientos y experiencias en el uso de plantas medicinales. Abordamos diversas formas de aplicación, desde tinturas, destilación de aceites esenciales, hasta cosmética natural como jabones artesanales. Compartimos técnicas para el cultivo, siembra, reproducción y huertos urbanos. Nuestra experiencia busca inspirar una sanación integral, especialmente en lo emocional.</p>
+  <h3>Misión</h3>
+  <p>Difundir el conocimiento sobre medicina natural y bienestar holístico, brindando herramientas prácticas para mejorar la salud, armonizar cuerpo y espíritu, y conectar con la naturaleza.</p>
+  <h3>Visión</h3>
+  <p>Ser un referente en educación y productos naturales, promoviendo un estilo de vida saludable y consciente basado en la ciencia y la tradición herbolaria.</p>
+</section>
+
+<section id="productos" class="dark-section" style="display:none;">
+  <h2>Nuestros Productos</h2>
+  <p>Explora nuestra línea de productos naturales: aceites esenciales, tinturas, cremas, bálsamos y jabones artesanales. Todos elaborados con plantas cultivadas de forma consciente y sostenible.</p>
+</section>
+
+<section id="cursos" class="dark-section" style="display:none;">
+  <h2>Nuestros Cursos</h2>
+  <p>Ofrecemos cursos presenciales y en línea sobre: herbolaria, destilación, cosmética natural, huertos urbanos y más. Aprende a usar las plantas para sanar cuerpo y mente.</p>
+</section>
+
+<section id="servicios" class="dark-section" style="display:none;">
+  <h2>Nuestros Servicios</h2>
+  <p>Asesorías personalizadas, talleres comunitarios, instalación de huertos urbanos y acompañamiento en proyectos de salud natural. Estamos aquí para guiarte en tu camino.</p>
+</section>
+
+<section id="tienda" class="dark-section" style="display:none;">
+  <h2>Tienda Online</h2>
+  <p>Muy pronto podrás comprar directamente desde nuestra web. Mientras tanto, contáctanos por redes o WhatsApp para conocer el catálogo completo.</p>
+</section>
+
+<section id="contacto" class="dark-section" style="display:none;">
+  <h2>Formulario de Contacto y Agenda de Cursos</h2>
+  <form onsubmit="enviarFormulario(); return false;">
+    <label>Nombre:</label>
+    <input type="text" required>
+    <label>Teléfono:</label>
+    <input type="tel" required>
+    <label>Correo Electrónico:</label>
+    <input type="email" required>
+    <label>Fecha del Curso:</label>
+    <input type="date" required>
+    <label>Mensaje o consulta:</label>
+    <textarea rows="4"></textarea>
+    <button type="submit">Enviar</button>
+  </form>
+</section>
+
+<footer>
+  <p>&copy; 2025 Esencia & Ciencia. Todos los derechos reservados.</p>
+</footer>
+
+<script>
+  function mostrar(id) {
+    const secciones = ['quienes', 'productos', 'cursos', 'servicios', 'tienda', 'contacto'];
+    secciones.forEach(sec => {
+      document.getElementById(sec).style.display = (sec === id) ? 'block' : 'none';
+    });
+    window.scrollTo({ top: document.getElementById(id).offsetTop - 60, behavior: 'smooth' });
+  }
+
+  function enviarFormulario() {
+    alert('¡Gracias por contactarnos! Nos comunicaremos contigo muy pronto.');
+  }
+</script>
+
+</body>
+</html>
+```
+
+---
+
+### ✅ Últimos pasos
+
+- ✅ Guarda la imagen como `portada.jpg`
+- ✅ Guarda este código como `index.html`
+- ✅ Ábrelos juntos en tu navegador y ¡listo!
+
+---
+
+¿Quieres que empaquete todo esto en un archivo `.zip` descargable con todo listo (HTML + imagen)? Puedo hacerlo por ti.
